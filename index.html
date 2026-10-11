@@ -16,13 +16,11 @@
             color: #333;
             padding: 40px 20px;
         }
+       
         .container {
             max-width: 900px;
             margin: 0 auto;
-            background: #ffffff;
-            border-radius: 12px;
-            padding: 40px;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            /* 删除 background、border-radius、padding、box‑shadow */
         }
         h1 {
             text-align: center;
@@ -54,6 +52,7 @@
             padding: 24px 20px;
             text-align: center;
             transition: 0.2s;
+            background:#fff;
         }
         .download-card:hover {
             border-color: #3498db;
@@ -80,12 +79,12 @@
         .download-btn:hover {
             background-color:#2980b9;
         }
-
         /* 音频列表样式 */
         .audio-list{
             border:1px solid #e2e8f0;
             border-radius:8px;
             padding:20px;
+            background:#fff;
         }
         .audio-item{
             display:flex;
@@ -105,7 +104,6 @@
             flex:1;
             max-width:100%;
         }
-
         footer {
             margin-top:50px;
             text-align:center;
@@ -118,8 +116,6 @@
     <div class="container">
         <h1>九上道法知识清单配套资料</h1>
         <p class="desc">个人依据老师讲解整理｜仅供学习使用</p>
-
-
         <h2 class="section-title">电子版资料</h2>
         <div class="download-wrap">
             <!-- PPT电子版 -->
@@ -135,8 +131,6 @@
                 <a href="#" class="download-btn">点击下载</a>
             </div>
         </div>
-
-
         <h2 class="section-title">AI朗读音频（在线播放，不可下载）</h2>
         <div class="audio-list">
             <!--每一课音频，src="#",上传音频后替换为音频地址，audio标签原生只在线播放，无下载按钮-->
@@ -211,8 +205,6 @@
                 
             </div>
         </div>
-
-
         <h2 class="section-title">思维导图电子版</h2>
         <div class="download-wrap">
             <div class="download-card">
@@ -221,8 +213,6 @@
                 <a href="#" class="download-btn">点击下载</a>
             </div>
         </div>
-
-
         <footer>
             <p>定价：无价｜仅供学习使用</p>
         </footer>
