@@ -20,7 +20,6 @@
         .container {
             max-width: 900px;
             margin: 0 auto;
-            /* 删除 background、border-radius、padding、box‑shadow */
         }
         h1 {
             text-align: center;
@@ -40,10 +39,10 @@
             border-left:4px solid #3498db;
             padding-left:12px;
         }
-        /* 下载卡片容器 */
+        /* 下载卡片容器：手机端一行2个，最小宽度140px */
         .download-wrap {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
             gap: 24px;
         }
         .download-card {
@@ -79,7 +78,7 @@
         .download-btn:hover {
             background-color:#2980b9;
         }
-        /* 音频列表样式 */
+        /* 音频列表样式：手机标签换行布局 */
         .audio-list{
             border:1px solid #e2e8f0;
             border-radius:8px;
@@ -88,8 +87,8 @@
         }
         .audio-item{
             display:flex;
-            align-items:center;
-            gap:12px;
+            flex-direction: column;
+            gap:8px;
             padding:12px 0;
             border-bottom:1px solid #f0f2f5;
         }
@@ -97,12 +96,11 @@
             border-bottom:none;
         }
         .audio-item label{
-            min-width:110px;
+            min-width: auto;
             font-size:14px;
         }
         audio{
-            flex:1;
-            max-width:100%;
+            width:100%;
         }
         footer {
             margin-top:50px;
